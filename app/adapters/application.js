@@ -164,7 +164,7 @@ export default Adapter.extend(CheckForErrors, {
         live: true,
         returnDocs: false
       }).on('change', bind(this, 'onChange')
-      ).on('error', Ember.K); // Change sometimes throws weird 500 errors that we can ignore
+      ).on('error', function() {}); // Change sometimes throws weird 500 errors that we can ignore
       db.changesListener = this.changes;
     }
   },
