@@ -3,5 +3,6 @@ window.deprecationWorkflow.config = {
   workflow: [
     { handler: 'silence', matchId: 'ember-getowner-polyfill.import' },
     { handler: 'silence', matchId: 'ember-views.did-init-attrs' },
+    { handler: 'silence', matchId: 'ember-inflector.globals' },
   ]
 };
