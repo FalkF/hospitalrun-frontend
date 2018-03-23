@@ -10,15 +10,89 @@
     ember-cli-babel "^6.10.0"
     ember-cli-htmlbars-inline-precompile "^1.0.0"
 
+"@glimmer/compiler@^0.22.0":
+  version "0.22.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/compiler/-/compiler-0.22.3.tgz#3aef9448460af1d320a82423323498a6ff38a0c6"
+  dependencies:
+    "@glimmer/syntax" "^0.22.3"
+    "@glimmer/util" "^0.22.3"
+    "@glimmer/wire-format" "^0.22.3"
+    simple-html-tokenizer "^0.3.0"
+
+"@glimmer/di@^0.1.8":
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/@glimmer/di/-/di-0.1.11.tgz#a6878c07a13a2c2c76fcde598a5c97637bfc4280"
+
 "@glimmer/di@^0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@glimmer/di/-/di-0.2.0.tgz#73bfd4a6ee4148a80bf092e8a5d29bcac9d4ce7e"
+
+"@glimmer/interfaces@^0.22.3":
+  version "0.22.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/interfaces/-/interfaces-0.22.3.tgz#1c2e3289ae41a750f0c8ddcc64529b9e90dda604"
+  dependencies:
+    "@glimmer/wire-format" "^0.22.3"
+
+"@glimmer/node@^0.22.0":
+  version "0.22.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/node/-/node-0.22.3.tgz#ff33eea6e65147a20c1bd1f05fdc4a6c3595c54c"
+  dependencies:
+    "@glimmer/runtime" "^0.22.3"
+    simple-dom "^0.3.0"
+
+"@glimmer/object-reference@^0.22.3":
+  version "0.22.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/object-reference/-/object-reference-0.22.3.tgz#31db68c8912324c63509b1ef83213f7ad4ef312b"
+  dependencies:
+    "@glimmer/reference" "^0.22.3"
+    "@glimmer/util" "^0.22.3"
+
+"@glimmer/object@^0.22.3":
+  version "0.22.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/object/-/object-0.22.3.tgz#1fc9fd7465c7d12e5b92464ad40038b595de8ed0"
+  dependencies:
+    "@glimmer/object-reference" "^0.22.3"
+    "@glimmer/util" "^0.22.3"
+
+"@glimmer/reference@^0.22.0", "@glimmer/reference@^0.22.3":
+  version "0.22.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/reference/-/reference-0.22.3.tgz#6f2ef8cd97fe756d89fef75f8c3c79003502a2a9"
+  dependencies:
+    "@glimmer/util" "^0.22.3"
 
 "@glimmer/resolver@^0.4.1":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@glimmer/resolver/-/resolver-0.4.3.tgz#b1baae5c3291b4621002ccf8d7870466097e841d"
   dependencies:
     "@glimmer/di" "^0.2.0"
+
+"@glimmer/runtime@^0.22.0", "@glimmer/runtime@^0.22.3":
+  version "0.22.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/runtime/-/runtime-0.22.3.tgz#b8cb28efc9cc86c406ee996f5c2cf6730620d404"
+  dependencies:
+    "@glimmer/interfaces" "^0.22.3"
+    "@glimmer/object" "^0.22.3"
+    "@glimmer/object-reference" "^0.22.3"
+    "@glimmer/reference" "^0.22.3"
+    "@glimmer/util" "^0.22.3"
+    "@glimmer/wire-format" "^0.22.3"
+
+"@glimmer/syntax@^0.22.3":
+  version "0.22.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/syntax/-/syntax-0.22.3.tgz#8528d19324bf7f920f5cfd31925e452e51781b44"
+  dependencies:
+    handlebars "^4.0.6"
+    simple-html-tokenizer "^0.3.0"
+
+"@glimmer/util@^0.22.0", "@glimmer/util@^0.22.3":
+  version "0.22.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.22.3.tgz#8272f50905d1bb904ee371e8ade83fd779b51508"
+
+"@glimmer/wire-format@^0.22.3":
+  version "0.22.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/wire-format/-/wire-format-0.22.3.tgz#19b226d9b93ba6ee54472d9ffb1d48e7c0d80a0d"
+  dependencies:
+    "@glimmer/util" "^0.22.3"
 
 "@octokit/rest@^14.0.4":
   version "14.0.9"
@@ -973,17 +1047,13 @@ babel-plugin-eval@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-eval/-/babel-plugin-eval-1.0.1.tgz#a2faed25ce6be69ade4bfec263f70169195950da"
 
-babel-plugin-feature-flags@^0.2.1:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/babel-plugin-feature-flags/-/babel-plugin-feature-flags-0.2.3.tgz#81d81ed77bda2014098fa8243abcf03a551cbd4d"
-  dependencies:
-    json-stable-stringify "^1.0.1"
+babel-plugin-feature-flags@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-feature-flags/-/babel-plugin-feature-flags-0.3.1.tgz#9c827cf9a4eb9a19f725ccb239e85cab02036fc1"
 
-babel-plugin-filter-imports@^0.2.0:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-filter-imports/-/babel-plugin-filter-imports-0.2.1.tgz#784f96a892f2f7ed2ccf0955688bd8916cd2e212"
-  dependencies:
-    json-stable-stringify "^1.0.1"
+babel-plugin-filter-imports@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-filter-imports/-/babel-plugin-filter-imports-0.3.1.tgz#e7859b56886b175dd2616425d277b219e209ea8b"
 
 babel-plugin-htmlbars-inline-precompile@^0.2.3:
   version "0.2.3"
@@ -1569,13 +1639,13 @@ babel-types@^6.19.0, babel-types@^6.24.1:
     lodash "^4.2.0"
     to-fast-properties "^1.0.1"
 
-babel5-plugin-strip-class-callcheck@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/babel5-plugin-strip-class-callcheck/-/babel5-plugin-strip-class-callcheck-5.1.0.tgz#77d4a40c8614d367b8a21a53908159806dba5f91"
+babel6-plugin-strip-class-callcheck@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/babel6-plugin-strip-class-callcheck/-/babel6-plugin-strip-class-callcheck-6.0.0.tgz#de841c1abebbd39f78de0affb2c9a52ee228fddf"
 
-babel5-plugin-strip-heimdall@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/babel5-plugin-strip-heimdall/-/babel5-plugin-strip-heimdall-5.0.2.tgz#e1fe191c34de79686564d50a86f4217b8df629c1"
+babel6-plugin-strip-heimdall@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/babel6-plugin-strip-heimdall/-/babel6-plugin-strip-heimdall-6.0.1.tgz#35f80eddec1f7fffdc009811dfbd46d9965072b6"
 
 babylon@^5.8.38:
   version "5.8.38"
@@ -1897,7 +1967,7 @@ broccoli-asset-rewrite@^1.1.0:
   dependencies:
     broccoli-filter "^1.2.3"
 
-broccoli-babel-transpiler@^5.5.0, broccoli-babel-transpiler@^5.6.2:
+broccoli-babel-transpiler@^5.6.2:
   version "5.6.2"
   resolved "https://registry.yarnpkg.com/broccoli-babel-transpiler/-/broccoli-babel-transpiler-5.6.2.tgz#958c72e43575b2f0a862a5096dba1ce1ebc7d74d"
   dependencies:
@@ -4679,7 +4749,7 @@ ember-cli-babel@^6.0.0-beta.4:
     clone "^2.0.0"
     ember-cli-version-checker "^1.2.0"
 
-ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.10.0, ember-cli-babel@^6.11.0, ember-cli-babel@^6.3.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.7.2, ember-cli-babel@^6.8.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2:
+ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.10.0, ember-cli-babel@^6.11.0, ember-cli-babel@^6.3.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.7.2, ember-cli-babel@^6.8.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2, ember-cli-babel@^6.9.0:
   version "6.12.0"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.12.0.tgz#3adcdbe1278da1fcd0b9038f1360cb4ac5d4414c"
   dependencies:
@@ -5113,26 +5183,26 @@ ember-concurrency@0.8.15:
     ember-cli-babel "^6.8.2"
     ember-getowner-polyfill "^1.1.0 || ^2.0.0"
 
-ember-data@2.12.0:
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/ember-data/-/ember-data-2.12.0.tgz#64ba2ed9eb9c71fb093d577c5318321b2ffe90fd"
+ember-data@2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/ember-data/-/ember-data-2.13.0.tgz#6d61487129de0e72225cc98bbc0d995e2042a933"
   dependencies:
     amd-name-resolver "0.0.5"
-    babel-plugin-feature-flags "^0.2.1"
-    babel-plugin-filter-imports "^0.2.0"
-    babel5-plugin-strip-class-callcheck "^5.1.0"
-    babel5-plugin-strip-heimdall "^5.0.2"
-    broccoli-babel-transpiler "^5.5.0"
+    babel-plugin-feature-flags "^0.3.1"
+    babel-plugin-filter-imports "^0.3.1"
+    babel6-plugin-strip-class-callcheck "^6.0.0"
+    babel6-plugin-strip-heimdall "^6.0.1"
+    broccoli-babel-transpiler "^6.0.0"
     broccoli-file-creator "^1.0.0"
     broccoli-merge-trees "^1.0.0"
     chalk "^1.1.1"
-    ember-cli-babel "^5.1.6"
+    ember-cli-babel "^6.0.0-beta.7"
     ember-cli-path-utils "^1.0.0"
     ember-cli-string-utils "^1.0.0"
     ember-cli-test-info "^1.0.0"
     ember-cli-version-checker "^1.1.4"
-    ember-inflector "^1.9.4"
-    ember-runtime-enumerable-includes-polyfill "^1.0.0"
+    ember-inflector "^2.0.0"
+    ember-runtime-enumerable-includes-polyfill "^2.0.0"
     exists-sync "0.0.3"
     git-repo-info "^1.1.2"
     heimdalljs "^0.3.0"
@@ -5260,11 +5330,11 @@ ember-i18n@~5.0.0:
     ember-cli-version-checker "^1.2.0"
     ember-getowner-polyfill "^1.2.2"
 
-ember-inflector@^1.9.4:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/ember-inflector/-/ember-inflector-1.11.0.tgz#99baae18e2bee53cfa97d8db1d739280289a174f"
+ember-inflector@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/ember-inflector/-/ember-inflector-2.1.0.tgz#afcb92d022a4eab58f08ff4578eafc3a1de2d09b"
   dependencies:
-    ember-cli-babel "^5.1.7"
+    ember-cli-babel "^6.0.0"
 
 ember-inspector@2.0.4:
   version "2.0.4"
@@ -5366,12 +5436,12 @@ ember-router-generator@^1.0.0:
   dependencies:
     recast "^0.11.3"
 
-ember-runtime-enumerable-includes-polyfill@^1.0.0:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/ember-runtime-enumerable-includes-polyfill/-/ember-runtime-enumerable-includes-polyfill-1.0.4.tgz#16a7612e347a2edf07da8b2f2f09dbfee70deba0"
+ember-runtime-enumerable-includes-polyfill@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/ember-runtime-enumerable-includes-polyfill/-/ember-runtime-enumerable-includes-polyfill-2.1.0.tgz#dc6d4a028471e4acc350dfd2a149874fb20913f5"
   dependencies:
-    ember-cli-babel "^5.1.6"
-    ember-cli-version-checker "^1.1.6"
+    ember-cli-babel "^6.9.0"
+    ember-cli-version-checker "^2.1.0"
 
 ember-select-list@0.9.5:
   version "0.9.5"
@@ -5410,10 +5480,16 @@ ember-sinon@~0.7.0:
     ember-cli-babel "^5.1.7"
     sinon "^2.1.0"
 
-ember-source@2.12.0:
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-2.12.0.tgz#5c7d09765a5c2c071382f3c02cf28b34d450e4ef"
+ember-source@2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-2.13.0.tgz#82c47299beecee20b21c14404693f2dff32bbc07"
   dependencies:
+    "@glimmer/compiler" "^0.22.0"
+    "@glimmer/di" "^0.1.8"
+    "@glimmer/node" "^0.22.0"
+    "@glimmer/reference" "^0.22.0"
+    "@glimmer/runtime" "^0.22.0"
+    "@glimmer/util" "^0.22.0"
     broccoli-funnel "^1.0.6"
     broccoli-merge-trees "^1.1.4"
     ember-cli-get-component-path-option "^1.0.0"
@@ -5423,10 +5499,12 @@ ember-source@2.12.0:
     ember-cli-test-info "^1.0.0"
     ember-cli-valid-component-name "^1.0.0"
     ember-cli-version-checker "^1.1.7"
+    handlebars "^4.0.6"
     jquery "^3.1.1"
     resolve "^1.1.7"
     rsvp "^3.4.0"
     simple-dom "^0.3.0"
+    simple-html-tokenizer "^0.3.0"
 
 ember-template-lint@^0.5.10:
   version "0.5.18"
@@ -6945,6 +7023,16 @@ growly@^1.3.0:
 handlebars@^4.0.1, handlebars@^4.0.4:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.0.6.tgz#2ce4484850537f9c97a8026d5399b935c4ed4ed7"
+  dependencies:
+    async "^1.4.0"
+    optimist "^0.6.1"
+    source-map "^0.4.4"
+  optionalDependencies:
+    uglify-js "^2.6"
+
+handlebars@^4.0.6:
+  version "4.0.11"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.0.11.tgz#630a35dfe0294bc281edae6ffc5d329fc7982dcc"
   dependencies:
     async "^1.4.0"
     optimist "^0.6.1"
@@ -12397,6 +12485,10 @@ simple-get@^2.7.0:
     decompress-response "^3.3.0"
     once "^1.3.1"
     simple-concat "^1.0.0"
+
+simple-html-tokenizer@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/simple-html-tokenizer/-/simple-html-tokenizer-0.3.0.tgz#9b8b5559d80e331a544dd13dd59382e5d0d94411"
 
 simple-is@~0.2.0:
   version "0.2.0"
